@@ -51,7 +51,6 @@ products.forEach(product => {
     for (let key in product) {
         console.log(`${key}: ${product[key]}`);
     }
-    console.log("-----------------------");
 });
 
 // 2. Using forEach() for the Map to show keys and values descriptively

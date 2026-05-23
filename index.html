@@ -2,12 +2,26 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>My first script</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> My first project USING DOM </title>
+    <link rel="stylesheet" href="src/css/style.css">
 </head>
 <body>
-    <h1> Test javascript</h1>J
-    <p> Programming to validate your age</p>
 
-    <script src="gestionArchivo.js"></script>
+    <H1> My personal Notes</H1>
+    <p> Type a note below and click "add" to save it</p>
+
+    <!-- simple form container for user input-->
+    <div class="input-container">
+        <input type="text" id="noteInput" placeholder="type your note here...">
+        <button id="addBtn"> Add</button>
+    </div>
+
+    <!-- Dynamic list where notes will be rendered-->
+    <ul id="notesList"></ul>
+
+    <script src="src/js/manipulatingDOM.js"></script>
+    
 </body>
 </html>
+
