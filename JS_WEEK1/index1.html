@@ -3,11 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Interactive User Validation</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <main>
+        <header>
+            <h1>Interactive User Validation</h1>
+            <p class="lead">This exercise asks for a name and age, validates the input, and displays results in the browser console.</p>
+        </header>
 
+        <section class="card">
+            <h2>How it works</h2>
+            <ul class="card-list">
+                <li>
+                    <strong>User prompts</strong>
+                    <span>Requests user input for name and age using `prompt()`.</span>
+                </li>
+                <li>
+                    <strong>Input validation</strong>
+                    <span>Parses the age with `Number()` and checks whether it is valid.</span>
+                </li>
+                <li>
+                    <strong>Age response</strong>
+                    <span>Displays a console message based on whether the user is underage or of legal age.</span>
+                </li>
+            </ul>
+        </section>
 
-    <script src="sistemainteractivo.js"></script>    
+        <footer>
+            <span>Script file: <strong>sistemainteractivo.js</strong></span>
+            <a href="README.md">View README</a>
+        </footer>
+    </main>
+
+    <script src="sistemainteractivo.js"></script>
 </body>
 </html>

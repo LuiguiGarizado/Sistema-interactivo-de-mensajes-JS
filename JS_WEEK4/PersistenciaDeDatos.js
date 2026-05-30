@@ -107,7 +107,7 @@ function loadFromLocalStorage() {
 // GET: Fetch list of elements from the server
 async function apiFetchTasks() {
     try {
-        const response = await fetch(`${API_URL}?_limit=6`);
+        const response = await fetch(`${API_URL}?_limit=4`);
         if (!response.ok) throw new Error('Failed to connect to the server');
         
         const data = await response.json();

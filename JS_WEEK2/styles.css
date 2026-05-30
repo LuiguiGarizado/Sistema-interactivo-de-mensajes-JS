@@ -1,0 +1,122 @@
+:root {
+    --bg: #f7f9fc;
+    --surface: #ffffff;
+    --primary: #1f6feb;
+    --text: #111827;
+    --muted: #6b7280;
+    --border: #e5e7eb;
+    --shadow: 0 16px 40px rgba(15, 23, 42, 0.08);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    min-height: 100%;
+    font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    background: linear-gradient(180deg, #eff6ff 0%, #f8fafc 100%);
+    color: var(--text);
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 32px;
+}
+
+main {
+    width: min(900px, 100%);
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 24px;
+    box-shadow: var(--shadow);
+    padding: 40px;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 32px;
+}
+
+h1 {
+    margin: 0;
+    font-size: clamp(2rem, 2.5vw, 2.75rem);
+    letter-spacing: -0.04em;
+}
+
+p.lead {
+    margin: 0;
+    max-width: 44rem;
+    line-height: 1.75;
+    color: var(--muted);
+    font-size: 1.05rem;
+}
+
+section.card {
+    border-radius: 18px;
+    padding: 28px;
+    background: #f8fbff;
+    border: 1px solid rgba(31, 111, 235, 0.08);
+}
+
+section.card h2 {
+    margin-top: 0;
+    font-size: 1.3rem;
+}
+
+.card-list {
+    list-style: none;
+    padding: 0;
+    margin: 1.5rem 0 0;
+    display: grid;
+    gap: 16px;
+}
+
+.card-list li {
+    display: grid;
+    gap: 8px;
+    padding: 18px;
+    border-radius: 16px;
+    background: white;
+    border: 1px solid var(--border);
+}
+
+.card-list li strong {
+    display: block;
+    font-size: 1rem;
+    color: var(--primary);
+}
+
+.card-list li span {
+    color: var(--muted);
+    line-height: 1.6;
+}
+
+footer {
+    margin-top: 32px;
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+    flex-wrap: wrap;
+    color: var(--muted);
+    font-size: 0.95rem;
+}
+
+footer a {
+    color: var(--primary);
+    text-decoration: none;
+}
+
+@media (max-width: 640px) {
+    body {
+        padding: 20px;
+    }
+    main {
+        padding: 28px;
+    }
+}

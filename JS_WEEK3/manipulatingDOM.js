@@ -27,9 +27,11 @@ function renderNoteInDOM(noteText, index){
 
         saveToLocalStorage();      // Update permanent storage
 
-        notesList.removeChild(li); // Remove from screen
+        // Remove the <li> element from the list using removeChild()
+        notesList.removeChild(li);
         
-        console.log(`Note deleted, Index : ${index}. Remaining notes: ${notes.length}`);
+        // Log the deletion in the console
+        alert(`Note deleted, Index: ${index}. Remaining notes: ${notes.length}`);
     });
 
     li.appendChild(deleteBtn);
